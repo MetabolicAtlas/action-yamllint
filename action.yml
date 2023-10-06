@@ -1,6 +1,5 @@
-name: 'YAML Lint'
+name: 'YAML Lint fork'
 description: 'Validate YAML syntax'
-author: 'ibiqlik'
 
 inputs:
   file_or_dir:

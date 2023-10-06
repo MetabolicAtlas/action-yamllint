@@ -1,13 +1,13 @@
 # GitHub YAMLlint
 
-This action executes `yamllint` (https://github.com/adrienverge/yamllint) against files or folder
+This action executes [yamllint](https://github.com/adrienverge/yamllint) against files or folder. Originally developed at [ibiqlik/action-yamllint](https://github.com/ibiqlik/action-yamllint).
 
 ## Usage
 
 Simple as:
 
 ```yaml
-- uses: ibiqlik/action-yamllint@v3
+- uses: metabolicatlas/action-yamllint@v3
 ```
 
 ### Optional input parameters
@@ -45,7 +45,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: yaml-lint
-        uses: ibiqlik/action-yamllint@v3
+        uses: metabolicatlas/action-yamllint@v3
         with:
           file_or_dir: myfolder/*values*.yaml
           config_file: .yamllint.yml
@@ -63,7 +63,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: yaml-lint
-        uses: ibiqlik/action-yamllint@v3
+        uses: metabolicatlas/action-yamllint@v3
 ```
 
 Config data examples:
@@ -96,7 +96,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - id: yaml-lint
-        uses: ibiqlik/action-yamllint@v3
+        uses: metabolicatlas/action-yamllint@v3
 
       - run: echo ${{ steps.yaml-lint.outputs.logfile }}
 
